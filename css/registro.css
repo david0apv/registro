@@ -1,0 +1,30 @@
+body {
+	background: rgb(136, 124, 175);
+}
+
+
+h2 {
+	background: rgb(168, 178, 205);
+	color: rgb(19, 7, 58);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 80px;
+	border: 2px solid red;
+}
+
+p {
+	color: rgb(35, 100, 103);
+	padding: 10px;
+}
+
+input {
+	color: rgb(6, 21, 57);
+	padding 20px;
+}
+
+div {
+	background: rgb(168, 178, 205);
+	padding: 10px;
+  	border: 2px solid red;
+	margin: 10px;
+}

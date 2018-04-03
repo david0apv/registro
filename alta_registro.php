@@ -75,8 +75,8 @@ if ($correo) {
 
 //Insertar datos a db si no hubo errores en caso contrario indicar el error
 if ($err == 0) {
-	//Asignar query a variable
-	$query = ("INSERT INTO usuarios (nombre,apaterno,amaterno,telefono,correo) VALUES ('$nombre','$apaterno','$amaterno','$telefono','$correo')");
+	//Asignar query a variable (se agrego user_name y password para no romper la funcionalidad con los cambios en la bd)
+	$query = ("INSERT INTO usuarios (nombre,apaterno,amaterno,telefono,correo,user_name,password) VALUES ('$nombre','$apaterno','$amaterno','$telefono','$correo','$nombre','62be6ae3fc86769be7e7c8a01ff46cf5')");
 	//Ejecutar query llamando la variable de conexiòn a la bd
 	$process = pg_query($conn, $query);
 	//Informar si la query se ejecuto o no

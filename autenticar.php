@@ -40,7 +40,7 @@ else {
 	else {
 		session_start();
 		$_SESSION['error']=1;
-		header("Location: inicio.php");
+		header("Location: login.php");
 	}
 }
 
